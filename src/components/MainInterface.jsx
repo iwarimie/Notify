@@ -5,11 +5,14 @@ import EventCalendar from '../components/EventCalendar';
 
 const MainInterface = () => {
     return ( 
-        <div className='h-screen w-full flex'>
+        <div className=' w-full flex'>
             <SideBar />
-             <div className='w-5/6'>
+             <div className='w-full'>
                  <TopBar />
-                 <EventCalendar />
+                 <div className='flex flex-col items-center justify-center'>
+                     <EventCalendar />
+                 </div>
+                
              </div>
         </div>
      );

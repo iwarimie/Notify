@@ -4,7 +4,7 @@ import Logo from "../../assets/Logo.png"
 
 const SideBar = () => {
     return ( 
-        <div className=" hidden md:block h-full w-1/4">        
+        <div className=" hidden lg:block h-full w-1/4">        
             <div className=" bg-gray-100 p-10">
             <div className="flex justify-between items-center">
                     <img src={Logo} alt="learnable-logo" />

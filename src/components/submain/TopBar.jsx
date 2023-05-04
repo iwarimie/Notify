@@ -2,16 +2,16 @@
 
 const TopBar = () => {
     return ( 
-        <div className="w-full sticky top-0">
-        <div className=" h-1/4 object-cover bg-no-repeat bg-tableBg flex flex-col justify-center">
+        <div className="w-full h-1/3 md:sticky top-0 mb-20">
+        <div className=" h-3/4 object-cover bg-tableBg flex flex-col justify-center">
             <div className="flex justify-around items-center text-lg text-white">
                 <div className=" ">
                     <div className="mb-5">Today</div>
                     <div>8th May, 2023 - 11:59 am</div>
                 </div>
 
-                <div className="flex w-2/6 justify-between">
-                    <div className="bg-orange-400 p-2 w-3/6 flex h-fit justify-evenly  rounded-md shadow-sm items-center">
+                <div className="md:flex w-2/6 justify-between ">
+                    <div className="bg-orange-400 p-2 mb-5 md:mb-0 w-full md:w-3/6 flex h-fit justify-evenly  rounded-md shadow-sm items-center">
                 
                             <i className="fa-solid fa-calendar-days"></i>
                     
