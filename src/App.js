@@ -1,11 +1,16 @@
-
 import './App.css';
+import MainInterface from './components/MainInterface';
 
 function App() {
+ 
+  
   return (
-    <div className="App">
-      <h1>LEARNABLE CALENDAR APP</h1>
+
+    <div className=''>
+      <MainInterface />
     </div>
+
+    
   );
 }
 
