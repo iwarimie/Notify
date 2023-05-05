@@ -1,9 +1,9 @@
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import { useState } from 'react';
-import MainInterface from './Components/MainInterface';
-import CreateEvent from './Components/createEvent/CreateEvent';
-import AdminInterface from './Components/AdminInterface/AdminInterface';
+import MainInterface from './components/MainInterface';
+import CreateEvent from './components/createEvent/CreateEvent';
+import AdminInterface from './components/AdminInterface/AdminInterface';
 
 function App() {
   const [events, setevents] = useState(

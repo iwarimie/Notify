@@ -1,9 +1,10 @@
 // codes to your Sid bar components here
-
+import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
+import SideBarPill from "./SideBarPill";
 import { SideBarData } from "./SidebarData";
 
-const SideBar = () => {
+const SideBar = ({text}) => {
   return (
     <div className=" hidden lg:block h-full w-1/4">
       <div className=" bg-gray-100 p-10 h-[100vh]">
@@ -18,6 +19,10 @@ const SideBar = () => {
         <div className="p-4 border-b-2 border-black mt-16">
           <div className="font-bold">TODOs</div>
         </div>
+        <Link to='/eventCreate'>
+          <SideBarPill text={text}/>
+        
+        </Link>
         <div className="mt-96 h-40 w-full"></div>
         <ul className="w-full p-0 flex flex-col">
         {SideBarData.map((value, key) => {
