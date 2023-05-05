@@ -3,7 +3,7 @@ import SideBar from '../submain/SideBar';
 import TopBar from '../submain/TopBar';
 import EventCalendar from '../EventCalendar';
 
-function AdminInterface() {
+function AdminInterface({eventFind, timeReturn}) {
   return (
     <div className='h-screen w-full flex'>
       <SideBar />

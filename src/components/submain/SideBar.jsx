@@ -1,6 +1,7 @@
 // codes to your Sid bar components here
 
 import Logo from "../../assets/Logo.png"
+import sideBarPill from "./sideBarPill";
 
 const SideBar = () => {
     return ( 

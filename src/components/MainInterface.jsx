@@ -10,9 +10,10 @@ const MainInterface = ({eventFind, timeReturn}) => {
             <SideBar />
              <div className='w-full'>
                  <TopBar />
-                 <EventCalendar findEvents={eventFind} returnTime={timeReturn} />
+                 
                  <div className='flex flex-col items-center justify-center'>
-                     <EventCalendar />
+                     
+                     <EventCalendar findEvents={eventFind} returnTime={timeReturn} />
                  </div>
                 
              </div>

@@ -63,7 +63,7 @@ function App() {
       <Routes>
         <Route path='/' element={<MainInterface eventFind={findEvents} timeReturn={returnTime} />}/>
         <Route path='/eventCreate' element={<CreateEvent addEvent={handleCreateEvent}/>}/>
-        <Route path='/admin' element={<AdminInterface/>}/>
+        <Route path='/admin' element={<AdminInterface eventFind={findEvents} timeReturn={returnTime}/>}/>
       </Routes>
 
       
