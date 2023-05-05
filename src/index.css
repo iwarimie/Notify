@@ -55,12 +55,116 @@
     line-height: 2.6em !important;
   }
   
-
   .react-calendar{
     width: 450px !important;
     height:400px;
     max-width: 100% !important;
   }
+
+  .this-week{
+    margin: auto;
+    padding: 12px;
+    background-color: #2C46AB;
+    color: white;
+    border-radius: 18px;
+  }
+
+  .this-week:hover{
+    background-color: #1f3691;
+  }
+
+  .sidebar-item {
+    padding: 1em 1em;
+    display: block;
+    transition: background-color .15s;
+  }
+
+  .sidebar-title{
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+  
+    
+  }
+  
+  .sidebar-title span i{
+    display: inline-block;
+    width: 1.5em;
+  }
+
+  .sidebar-title .toggle-btn{
+    cursor: pointer;
+    transition: transform .3s;
+    
+  }
+
+  .sidebar-item.open .sidebar-title .toggle-btn{
+    transform: rotate(180deg);
+  }
+
+  .sidebar-content{
+    padding-top: .25em;
+    height: 0;
+    font-size: .9em;
+    overflow: hidden;
+  
+  }
+
+  .sidebar-item.open .sidebar-content{
+    height: auto;
+  }
+  
+  .this-month{
+    margin: auto;
+    padding: 12px;
+    background-color: #2C46AB;
+    color: white;
+    border-radius: 18px;
+  }
+
+  .this-month:hover{
+    background-color: #1f3691;
+  }
+
+  .sidebar-item2 {
+    padding: 1em 1em;
+    display: block;
+    transition: background-color .15s;
+  }
+
+  .sidebar-title2{
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+  }
+  
+  .sidebar-title2 span i{
+    display: inline-block;
+    width: 1.5em;
+  }
+
+  .sidebar-title2 .toggle-btn2{
+    cursor: pointer;
+    transition: transform .3s;
+    
+  }
+
+  .sidebar-item2.open2 .sidebar-title2 .toggle-btn2{
+    transform: rotate(180deg);
+  }
+
+  .sidebar-content2{
+    padding-top: .25em;
+    height: 0;
+    font-size: .9em;
+    overflow: hidden;
+  
+  }
+
+  .sidebar-item2.open2 .sidebar-content2{
+    height: auto;
+  }
+
   @media(max-width: 500px){
     .react-calendar{
       max-width: 200% !important;
