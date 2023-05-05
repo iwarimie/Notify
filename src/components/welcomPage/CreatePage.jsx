@@ -17,7 +17,7 @@ function CreatePage({ clickhandler }) {
         <Button handleClick={clickhandler} props="SignUp" />
         <p className="Para-SignUp-P">
           Already have an account?{" "}
-          <Link to="/">
+          <Link to="/Login">
             <span>Login</span>
           </Link>
         </p>

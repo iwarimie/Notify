@@ -11,7 +11,7 @@ function LoginPage({ Clickhandler }) {
         <Email />
         <Password />
         <p className="Para-Forgot-P">Forgot Password?</p>
-        <Button handleClick={Clickhandler} props="Login" />
+        <Link to='/'><Button handleClick={Clickhandler} props="Login" /></Link>
         <p className="Para-SignUp-P">
           Dont have an account?{" "}
           <Link to="/CreatePage">
