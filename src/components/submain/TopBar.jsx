@@ -28,7 +28,6 @@ const TopBar = () => {
                     <div className="flex 3/6 items-center">
                         <i className="fa-solid fa-bell mx-5"></i>
                         <i className="fa-solid fa-share-nodes mx-5"></i>
-                        <Link to='/eventCreate'>Create Event</Link>
                     </div>
                     
                 </div>

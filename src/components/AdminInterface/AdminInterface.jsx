@@ -6,7 +6,7 @@ import EventCalendar from '../EventCalendar';
 function AdminInterface({eventFind, timeReturn}) {
   return (
     <div className='h-screen w-full flex'>
-      <SideBar />
+      <SideBar text="create Event" />
       <div className='w-5/6'>
                  <TopBar />
                  <EventCalendar findEvents={eventFind} returnTime={timeReturn} />

@@ -1,9 +1,9 @@
 // codes to your Sid bar components here
-
+import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png"
-import sideBarPill from "./sideBarPill";
+import SideBarPill from "./SideBarPill";
 
-const SideBar = () => {
+const SideBar = ({text}) => {
     return ( 
         <div className=" hidden lg:block h-full w-1/4">        
             <div className=" bg-gray-100 p-10">
@@ -16,10 +16,13 @@ const SideBar = () => {
                 <div className="font-bold">
                     TODOs
                 </div>
+                
+                
              </div>
+             <Link to='/eventCreate'><SideBarPill text={text}/></Link>
              <div className="mt-96 h-40 w-full">
-
-</div>
+            </div>
+            
              </div>
 
             
