@@ -1,10 +1,12 @@
 import React from "react";
-import Styles from "../InputsAndButtons/ButtonModule/Button.module.css"
+import Styles from "../InputsAndButtons/ButtonModule/Button.module.css";
 
-function Button({props}) {
+function Button({ props, handleClick }) {
   return (
     <>
-      <button className={Styles.btn}>{props}</button>
+      <button onClick={handleClick} className={Styles.btn}>
+        {props}
+      </button>
     </>
   );
 }
