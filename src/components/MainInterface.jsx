@@ -1,9 +1,10 @@
 // link the components from submain folder {Top and Side bar}
 // import { Link } from 'react-router-dom';
-import SideBar from '../components/submain/SideBar';
-import TopBar from '../components/submain/TopBar';
 
-import EventCalendar from '../components/EventCalendar';
+import SideBar from '../Components/submain/SideBar';
+import TopBar from '../Components/submain/TopBar';
+
+import EventCalendar from '../Components/EventCalendar';
 
 const MainInterface = ({eventFind, timeReturn}) => {
     return ( 

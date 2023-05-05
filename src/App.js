@@ -1,11 +1,11 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import MainInterface from "./components/MainInterface";
-import CreatePage from "./components/welcomPage/CreatePage";
-import LoginPage from "./components/welcomPage/LoginPage";
-import CreateEvent from "./components/createEvent/CreateEvent";
-import AdminInterface from "./components/AdminInterface/AdminInterface";
+import MainInterface from "./Components/MainInterface";
+import CreatePage from "./Components/welcomPage/CreatePage";
+import LoginPage from "./Components/welcomPage/LoginPage";
+import CreateEvent from "./Components/createEvent/CreateEvent";
+import AdminInterface from "./Components/AdminInterface/AdminInterface";
 
 function App() {
   const [events, setevents] = useState([
@@ -54,16 +54,15 @@ function App() {
     events.push(evt);
     console.log(events);
   };
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
-  if (isLoggedIn) {
-    return (
+
+  return (
       <div className="">
         {console.log(events)}
-
         <Routes>
           <Route
             path="/"
@@ -81,23 +80,20 @@ function App() {
               <AdminInterface eventFind={findEvents} timeReturn={returnTime} />
             }
           />
-        </Routes>
-      </div>
-    );
-  } else {
-    return (
-      <>
-        <Routes>
           <Route
             path="/CreatePage"
             element={<CreatePage Clickhandler={handleLogin} />}
           />
 
-          <Route path="/" element={<LoginPage Clickhandler={handleLogin} />} />
+          <Route
+            path="/Login"
+            element={<LoginPage Clickhandler={handleLogin} />}
+          />
+
         </Routes>
-      </>
+      </div>
     );
   }
-}
+
 
 export default App;
