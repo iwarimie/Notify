@@ -1,0 +1,42 @@
+.Main {
+  border: 2px solid blue;
+}
+.Main2 {
+  border: 2px solid red;
+  margin-top: 20px;
+}
+.Para-Forgot-P {
+  /* border: 2px solid red; */
+  position: relative;
+  left: 70%;
+  margin-bottom: 20px;
+  color: #86598c;
+}
+.Para-SignUp-P {
+  width: 228px;
+  height: 24px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.Para-SignUp-P {
+  margin: 20px;
+  position: relative;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Para-OR-P {
+  color: rgb(12, 241, 12);
+}
+hr {
+  display: block;
+  width: 100%;
+  border-style: inset;
+  border: 1px solid #667085;
+  padding: 0px 100px;
+}
