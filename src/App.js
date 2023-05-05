@@ -59,7 +59,6 @@ function App() {
     <div className=''>
       {console.log(events)}
       
-
       <Routes>
         <Route path='/' element={<MainInterface eventFind={findEvents} timeReturn={returnTime} />}/>
         <Route path='/eventCreate' element={<CreateEvent addEvent={handleCreateEvent}/>}/>
