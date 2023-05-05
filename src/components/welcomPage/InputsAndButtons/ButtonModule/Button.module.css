@@ -1,0 +1,17 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+}
+.btn {
+  /* position: absolute; */
+  background: #f5772f;
+  border-radius: 8px;
+  width: 434px;
+  height: 52px;
+  /* left: 163px;
+  top: 532px; */
+}

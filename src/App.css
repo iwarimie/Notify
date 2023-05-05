@@ -1,0 +1,9 @@
+.Main {
+  border: 2px solid blue;
+}
+.Para-ForgotP {
+  /* border: 2px solid red; */
+  position: relative;
+  left: 70%;
+  margin-bottom: 20px;
+}
