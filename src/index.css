@@ -59,5 +59,10 @@
   .react-calendar{
     width: 450px !important;
     height:400px;
-    max-width: 200% !important;
+    max-width: 100% !important;
+  }
+  @media(max-width: 500px){
+    .react-calendar{
+      max-width: 200% !important;
+    }
   }

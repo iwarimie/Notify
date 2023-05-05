@@ -14,16 +14,16 @@ const EventCalendar = ({findEvents, returnTime}) => {
 
     return ( 
         <div className='flex flex-col w-full mt-5 items-center justify-center'>
-          <div>
+         <div>
           <Calendar 
             onChange={onChange} 
             value={value}
-            className={"bg-red-700 shadow-lg rounded-md"} />
+            className={"bg-red-700 shadow-lg rounded-md"} /> 
           </div>
      
 
-      <div className='w-full md:w-2/3 h-20 mt-20 font-bold'>
-        <div className='w-full h-full bg-gray-100 border-t-8 border-green-600 rounded-lg shadow-sm flex justify-around items-center'>
+      <div className='w-full md:w-2/3 h-20 mt-20 font-bold flex flex-col items-center'>
+        <div className='w-5/6 md:w-full h-full bg-gray-100 border-t-8 border-green-600 rounded-lg shadow-sm flex  justify-around items-center'>
           <div>
             {findEvents(value.toLocaleDateString("default", {year: "numeric"}) + '-' +
                         value.toLocaleDateString("default", {month: "2-digit"}) + '-' +
