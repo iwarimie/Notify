@@ -1,15 +1,16 @@
 // link the components from submain folder {Top and Side bar}
-import SideBar from '../components/submain/SideBar';
-import TopBar from '../components/submain/TopBar';
-import EventCalendar from '../components/EventCalendar';
+import SideBar from '../Components/submain/SideBar';
+import TopBar from '../Components/submain/TopBar';
 
-const MainInterface = () => {
+import EventCalendar from '../Components/EventCalendar';
+
+const MainInterface = ({eventFind, timeReturn}) => {
     return ( 
         <div className='h-screen w-full flex'>
             <SideBar />
              <div className='w-5/6'>
                  <TopBar />
-                 <EventCalendar />
+                 <EventCalendar findEvents={eventFind} returnTime={timeReturn} />
              </div>
         </div>
      );

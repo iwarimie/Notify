@@ -1,13 +1,17 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
 // codes to your Top bar components here
 
 const TopBar = () => {
+    const value = new Date();
+
     return ( 
         <div className="w-full sticky top-0">
         <div className=" h-1/4 object-cover bg-no-repeat bg-tableBg flex flex-col justify-center">
             <div className="flex justify-around items-center text-lg text-white">
                 <div className=" ">
                     <div className="mb-5">Today</div>
-                    <div>8th May, 2023 - 11:59 am</div>
+                    <div>{value.toDateString()}</div>
                 </div>
 
                 <div className="flex w-2/6 justify-between">
@@ -24,6 +28,7 @@ const TopBar = () => {
                     <div className="flex 3/6 items-center">
                         <i className="fa-solid fa-bell mx-5"></i>
                         <i className="fa-solid fa-share-nodes mx-5"></i>
+                        <Link to='/eventCreate'>Create Event</Link>
                     </div>
                     
                 </div>
