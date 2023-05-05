@@ -1,6 +1,7 @@
 // codes to your Sid bar components here
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
+import TodoDropDown from "../TodoDropDown";
 import SideBarPill from "./SideBarPill";
 import { SideBarData } from "./SidebarData";
 
@@ -18,6 +19,9 @@ const SideBar = ({text}) => {
 
         <div className="p-4 border-b-2 border-black mt-16">
           <div className="font-bold">TODOs</div>
+        </div>
+        <div>
+                <TodoDropDown/>
         </div>
         <Link to='/eventCreate'>
           <SideBarPill text={text}/>
